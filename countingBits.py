@@ -1,8 +1,8 @@
 def dec_to_binary(n): 
-    return bin(n).replace("0b", "")
+    return bin(n).replace("0b", "") # O(log n)
 
 def oneCounter(binary): 
-    return len(binary.replace("0", ""))
+    return len(binary.replace("0", "")) 
 
 def countBits(n): 
     # ones = [0 for i in range(n + 1)]
@@ -17,3 +17,7 @@ def countBits(n):
 
 print(countBits(5))
 
+
+"""
+
+"""
