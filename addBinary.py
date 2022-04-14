@@ -12,3 +12,22 @@ def addBinary(a,b):
 a = "11"
 b = "1"
 addBinary(a,b)
+
+
+"""
+Version 2(Shorter)
+
+author: Jonatham Chang 
+
+def addBinary(a: str, b: str): 
+    decA = int(a, 2)
+    decB = int(b, 2)
+    return bin(decA + decB)[2:]
+
+
+#test1 
+print(addBinary("11", "1")) #--> 100 
+print(addBinary("1010", "1011")) #--> 10101 
+
+
+"""
