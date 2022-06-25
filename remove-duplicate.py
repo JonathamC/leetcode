@@ -4,7 +4,7 @@ class ListNode:
         self.next = next
 
 
-    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def deleteDuplicates(self, head):
         previous = None 
         current = head 
         duplicate = []
@@ -22,6 +22,23 @@ class ListNode:
         
         return head
 
+
+def printList(head): 
+    string = "["
+    while (head): 
+        string += "{}, ".format(head.val)
+        head = head.next
+    
+    string = string[:-2] + "]"
+    print(string)
+
+
+        
+
 lst = ListNode(1)
 lst.next = ListNode(1)
-print(lst)
+lst.next.next = ListNode(2)
+lst.next.next.next = ListNode(3)
+printList(lst)
+lst.deleteDuplicates(lst)
+printList(lst)
